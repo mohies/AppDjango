@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Ejemplo</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a mi página de ejemplo</h1>
+        <nav>
+            <a href="colaborador">Colaborador</a> 
+            <a href="protector">Protectora</a> 
+        </nav>
+    </header>
+
+    {%for animal in animales_mostrar %}  
+    
+        <article>
+            <h1>Cuidador:{{animal.cuidador}}</h1>
+            <h2>nombre:{{animal.nombre}}
+            <h2>{{animal.tipo}}</h2>
+        </article>
+    {% endfor %}
+
+   
+
+    <main>
+        <p>Este es un párrafo de ejemplo en mi primera página HTML.</p>
+        <p>Puedes aprender más sobre HTML en <a href="https://www.w3schools.com/html/">W3Schools</a>.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Página de Ejemplo</p>
+    </footer>
+</body>
+</html>
+
+
+
